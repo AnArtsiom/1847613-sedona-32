@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артем Аноприенко](https://up.htmlacademy.ru/htmlcss/32/user/1847613).
-* Наставник: Андрей Зинченко.
+* Наставник: [Андрей Зинченко](https://htmlacademy.ru/profile/zinchandrey).
 
 ---
 
