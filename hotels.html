@@ -24,7 +24,7 @@
 			<a href="index.html" class="header-logo">
 				<img class="header-logo-img" src="#" alt="logo">
 			</a>
-			<ul class="navigation-list navigation-user">
+			<ul class="navigation-list">
 				<li class="navigation-item">
 					<a href="#" class="navigation-link">
 						<span class="visually-hidden">
@@ -32,18 +32,16 @@
 						</span>
 					</a>
 				</li>
-				<li class="navigation-item navigation-user">
+				<li class="navigation-item">
 					<a href="#" class="navigation-link">
 						<span class="visually-hidden">
 							Избранное
 						</span>
 					</a>
 				</li>
-				<li class="navigation-item navigation-user">
-					<a href="#" class="navigation-link">
-						<span class="visually-hidden">
-							хочу сюда
-						</span>
+				<li class="navigation-item">
+					<a href="#" class="navigation-link button">
+						хочу сюда
 					</a>
 				</li>
 			</ul>
@@ -51,8 +49,8 @@
 	</header>
 
 	<main class="main-inner">
-		<header class="inner-header">
-			<h1 class="inner-header-title">Гостиницы Седоны</h1>
+		<section class="inner-filter">
+			<h1 class="inner-filter-title">Гостиницы Седоны</h1>
 			<ul class="breadcrumbs">
 				<li class="breadcrumbs-item">
 					<a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -64,25 +62,25 @@
 
 			<form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
 				<fieldset class="hotels-filter-group">
-					<legend class="hotels--filter-title">Инфраструктура</legend>
+					<legend class="hotels-filter-title">Инфраструктура:</legend>
 					<ul class="hotels-filter-list">
 						<li class="hotels-filter-item">
-							<label class="control">
-								<input class="visually-hidden control-input" type="checkbox" name="hotels-group"
+							<label class="checkbox">
+								<input class="visually-hidden checkbox-input" type="checkbox" name="hotels-checkbox"
 									value="pool" checked>
 								<span class="hotel-label">Бассейн</span>
 							</label>
 						</li>
 						<li class="hotels-filter-item">
-							<label class="control">
-								<input class="visually-hidden control-input" type="checkbox" name="hotels-group"
+							<label class="checkbox">
+								<input class="visually-hidden checkbox-input" type="checkbox" name="hotels-checkbox"
 									value="parking" checked>
 								<span class="hotel-label">Парковка</span>
 							</label>
 						</li>
 						<li class="hotels-filter-item">
-							<label class="control">
-								<input class="visually-hidden control-input" type="checkbox" name="hotels-group"
+							<label class="checkbox">
+								<input class="visually-hidden checkbox-input" type="checkbox" name="hotels-checkbox"
 									value="wifi">
 								<span class="hotel-label">Wi-Fi</span>
 							</label>
@@ -91,25 +89,25 @@
 				</fieldset>
 
 				<fieldset class="hotels-filter-group">
-					<legend class="hotels--filter-title">Тип жилья</legend>
+					<legend class="hotels-filter-title">Тип жилья:</legend>
 					<ul class="hotels-filter-list">
 						<li class="hotels-filter-item">
-							<label class="control">
-								<input class="visually-hidden control-input" type="radio" name="hotels-group"
+							<label class="radio">
+								<input class="visually-hidden radio-input" type="radio" name="hotels-radio"
 									value="hotel" checked>
 								<span class="hotel-label">Гостиница</span>
 							</label>
 						</li>
 						<li class="hotels-filter-item">
-							<label class="control">
-								<input class="visually-hidden control-input" type="radio" name="hotels-group"
+							<label class="radio">
+								<input class="visually-hidden radio-input" type="radio" name="hotels-radio"
 									value="motel">
 								<span class="hotel-label">Мотель</span>
 							</label>
 						</li>
 						<li class="hotels-filter-item">
-							<label class="control">
-								<input class="visually-hidden control-input" type="radio" name="hotels-group"
+							<label class="radio">
+								<input class="visually-hidden radio-input" type="radio" name="hotels-radio"
 									value="apartments">
 								<span class="hotel-label">Апартаменты</span>
 							</label>
@@ -132,15 +130,16 @@
 						<span class="visually-hidden">Изменить максимальную цену.</span>
 					</button>
 				</fieldset>
-				<button class="button" type="submit">Применить</button>
-				<button class="button" type="button">Сбросить</button>
+				<button class="button button-submit" type="submit">Применить</button>
+				<button class="button button-clear" type="button">Сбросить</button>
 			</form>
-		</header>
+		</section>
 
 		<section class="hotels-sort">
-			<h2 class="hotels-sort-title">найдено гостиниц: <span class="hotels_number">38</span></h2>
+			<h2 class="visually-hidden">Результаты поиска</h2>
+			<span class="hotels-sort-title">найдено гостиниц: <span class="hotels_number">38</span></span>
 			<form class="hotels-sorting-type">
-				<select class="select-control" id="sorting" name="sorting">
+				<select class="select-control" name="sorting">
 					<option value="cheap">Сначала дешёвые</option>
 					<option value="expensive">Сначала дорогие</option>
 				</select>
@@ -168,14 +167,11 @@
 					<button class="favourites">В избранное</button>
 				</div>
 				<div class="hotel-card-rating_block">
-					<label for="rating_1" class="label_rating"></label>
-					<input name="rating" value="1" id="rating_1" type="radio" />
-					<label for="rating_2" class="label_rating"></label>
-					<input name="rating" value="2" id="rating_2" type="radio" />
-					<label for="rating_3" class="label_rating"></label>
-					<input name="rating" value="3" id="rating_3" type="radio" />
-					<label for="rating_4" class="label_rating"></label>
-					<input name="rating" value="4" id="rating_4" type="radio" />
+					<span class="star" data-rating="1"></span>
+					<span class="star" data-rating="2"></span>
+					<span class="star" data-rating="3"></span>
+					<span class="star" data-rating="4"></span>
+					<span class="star" data-rating="5"></span>
 				</div>
 				<p class="hotel-card-rating">РЕЙТИНГ:<span>8.5</span></p>
 			</div>
@@ -190,12 +186,11 @@
 					<button class="favourites">В избранное</button>
 				</div>
 				<div class="hotel-card-rating_block">
-					<label for="rating_1" class="label_rating"></label>
-					<input name="rating" value="1" id="rating_1" type="radio" />
-					<label for="rating_2" class="label_rating"></label>
-					<input name="rating" value="2" id="rating_2" type="radio" />
-					<label for="rating_3" class="label_rating"></label>
-					<input name="rating" value="3" id="rating_3" type="radio" />
+					<span class="star" data-rating="1"></span>
+					<span class="star" data-rating="2"></span>
+					<span class="star" data-rating="3"></span>
+					<span class="star" data-rating="4"></span>
+					<span class="star" data-rating="5"></span>
 				</div>
 				<p class="hotel-card-rating">РЕЙТИНГ:<span>8.9</span></p>
 			</div>
@@ -210,10 +205,11 @@
 					<button class="favourites">В избранное</button>
 				</div>
 				<div class="hotel-card-rating_block">
-					<label for="rating_1" class="label_rating"></label>
-					<input name="rating" value="1" id="rating_1" type="radio" />
-					<label for="rating_2" class="label_rating"></label>
-					<input name="rating" value="2" id="rating_2" type="radio" />
+					<span class="star" data-rating="1"></span>
+					<span class="star" data-rating="2"></span>
+					<span class="star" data-rating="3"></span>
+					<span class="star" data-rating="4"></span>
+					<span class="star" data-rating="5"></span>
 				</div>
 				<p class="hotel-card-rating">РЕЙТИНГ:<span>9.2</span></p>
 			</div>
@@ -228,10 +224,11 @@
 					<button class="favourites">В избранное</button>
 				</div>
 				<div class="hotel-card-rating_block">
-					<label for="rating_1" class="label_rating"></label>
-					<input name="rating" value="1" id="rating_1" type="radio" />
-					<label for="rating_2" class="label_rating"></label>
-					<input name="rating" value="2" id="rating_2" type="radio" />
+					<span class="star" data-rating="1"></span>
+					<span class="star" data-rating="2"></span>
+					<span class="star" data-rating="3"></span>
+					<span class="star" data-rating="4"></span>
+					<span class="star" data-rating="5"></span>
 				</div>
 				<p class="hotel-card-rating">РЕЙТИНГ:<span>9.2</span></p>
 			</div>
@@ -276,7 +273,7 @@
 			<h3 class="mailing-title">Подпишитесь на рассылку</h3>
 			<p class="mailing-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
 			<form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-				<input type="text" id="mailing-email" name="mailing-email" placeholder="Ваш e-mail">
+				<input type="email" name="mailing-email" placeholder="Ваш e-mail">
 				<button type="submit">Подписаться</button>
 			</form>
 		</section>
