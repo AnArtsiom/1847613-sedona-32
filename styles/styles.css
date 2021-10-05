@@ -1,0 +1,36 @@
+.promo {
+	background-image: url('../img/index/index-background.jpg');
+	background-size: 1200px 485px;
+	background-repeat: no-repeat;
+}
+
+.advantages-list-item--housing {
+	background-image: url('../img/index/advantages/housing.svg');
+	background-size: 75px 72px;
+	background-repeat: no-repeat;
+}
+
+.advantages-list-item--food {
+	background-image: url('../img/index/advantages/food.svg');
+	background-size: 74px 70px;
+	background-repeat: no-repeat;
+}
+
+.advantages-list-item--souvenirs {
+	background-image: url('../img/index/advantages/souvenirs.svg');
+	background-size: 64px 76px;
+	background-repeat: no-repeat;
+}
+
+.mailing.mailing--index {
+	background-image: url('../img/mailing-background.jpg');
+	background-size: 1200px 411px;
+	background-repeat: no-repeat;
+}
+
+/* hotels */
+.inner-filter {
+	background-image: url('../img/hotels/hotels-background.jpg');
+	background-size: 1200px 408px;
+	background-repeat: no-repeat;
+}
