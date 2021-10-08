@@ -14,19 +14,41 @@
 	font-display: swap;
 }
 
+html {
+	height: 100%;
+}
+
 body {
-  font-family: "PT Sans", sans-serif;
-  background-color: #fff;
-  color: #333333;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  font-style: normal;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	font-family: "PT Sans", sans-serif;
+	background-color: #fff;
+	color: #333333;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 400;
+	font-style: normal;
 }
 
 /* navigation */
+.navigation {
+	display: flex;
+	width: 1200px;
+	margin: 0 auto;
+}
+
 .navigation-list {
+	margin: 0;
+	padding: 0;
+	width: 320px;
 	list-style: none;
+}
+
+.navigation-user {
+	width: 280px;
+	margin-left: auto;
 }
 
 .navigation-link {
@@ -49,6 +71,15 @@ body {
 	text-align: center;
 }
 
+.main-container {
+	flex-grow: 1;
+}
+
+.page-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
 /*  PROMO  */
 .promo {
 	background-image: url('../img/index/index-background.jpg');
@@ -57,6 +88,11 @@ body {
 	background-position: center;
 	background-color: #898989;
 	text-align: center;
+}
+
+.promo-img {
+	display: block;
+	margin: 0 auto;
 }
 
 .promo-about {
@@ -82,8 +118,13 @@ body {
 }
 
 .advantages-block {
+	display: flex;
 	background-color: #83B3D3;
 	color: #fff;
+}
+
+.advantages-block--right {
+	flex-direction: row-reverse;
 }
 
 .advantages-block-title {
@@ -94,19 +135,22 @@ body {
 }
 
 .advantages-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
 	list-style: none;
 }
 
-.advantages-list .advantages-list-item:nth-child(2n + 1) {
+.advantages-list-item {
+	width: 400px;
+}
+
+.advantages-list-item:nth-child(2n + 1) {
 	background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-list .advantages-list-item:nth-child(2) {
+.advantages-list-item:nth-child(2) {
 	background: rgba(131, 179, 211, 0.2);
-}
-
-.advantages-list--features li:nth-child(2n + 1) {
-	background-color: rgba(131, 179, 211, 0.12);	
 }
 
 .advantages-list-title {
@@ -117,19 +161,20 @@ body {
 	text-transform: uppercase;
 }
 
-.advantages-list-item--housing {
+.advantages-list .advantages-list-item--housing {
 	background-image: url('../img/index/advantages/housing.svg');
 	background-size: 75px 72px;
 	background-repeat: no-repeat;
 }
 
-.advantages-list-item--food {
+.advantages-list .advantages-list-item--food {
+	background-color: #fff;
 	background-image: url('../img/index/advantages/food.svg');
 	background-size: 74px 70px;
 	background-repeat: no-repeat;
 }
 
-.advantages-list-item--souvenirs {
+.advantages-list .advantages-list-item--souvenirs {
 	background-image: url('../img/index/advantages/souvenirs.svg');
 	background-size: 64px 76px;
 	background-repeat: no-repeat;
@@ -202,11 +247,23 @@ body {
 	line-height: 26px;
 	color: #fff;
 	text-transform: uppercase;
+	font-family: inherit;
 }
 
 /* FOOTER */
 
+.footer-social-link {
+	display: flex;
+	justify-content: space-around;
+	width: 1200px;
+	margin: 0 auto;
+}
+
 .footer-social-list {
+	margin: 0;
+	padding: 0;
+	width: 108px;
+	margin-right: auto;
 	list-style: none;
 }
 
@@ -215,6 +272,11 @@ body {
 	line-height: 40px;
 	color: #000;
 	text-decoration: none;
+}
+
+.footer-htmlacademy-link {
+	margin-left: auto;
+	margin-right: 72px;
 }
 
 /* HOTELS */
@@ -245,6 +307,10 @@ body {
   color: inherit;
 }
 
+.hotels-filter {
+	display: flex;
+}
+
 .hotels-filter-list {
 	list-style: none;
 }
@@ -259,12 +325,26 @@ body {
 	line-height: 23px;
 }
 
+.hotels-container {
+	margin: 0 auto;
+	width: 1056px;
+}
+
+.hotels-sort {
+	display: flex;
+}
+
 .hotels-sort-title {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 39px;
+	margin-right: 192px;
 	color: #000;
 	text-transform: uppercase;
+}
+
+.select-control {
+	margin-right: 81px;
 }
 
 .button-submit {
@@ -275,6 +355,7 @@ body {
 	line-height: 21px;
 	text-align: center;
 	text-transform: uppercase;
+	font-family: inherit;
 }
 
 /* HOTEL CARD */
@@ -337,8 +418,15 @@ body {
 }
 
 /* PAGINATION */
-
 .pagination {
+	display: flex;
+	justify-content: space-between;
+}
+
+.pagination-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
 	background-color: #fff;
 	list-style: none;
 }
