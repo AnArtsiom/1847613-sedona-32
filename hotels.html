@@ -151,23 +151,25 @@
 				<section class="hotels-sort">
 					<h2 class="visually-hidden">Результаты поиска</h2>
 					<span class="hotels-sort-title">найдено гостиниц: <span class="hotels_number">38</span></span>
-					<form class="hotels-sorting-type">
-						<select class="select-control" name="sorting">
-							<option value="cheap">Сначала дешёвые</option>
-							<option value="expensive">Сначала дорогие</option>
-						</select>
-					</form>
-					<a href="#" class="button">
-						<span class="visually-hidden">Показать список</span>
-					</a>
-					<a href="#" class="button">
-						<span class="visually-hidden">Показать карточки</span>
-					</a>
-					<a href="#" class="button">
-						<span class="visually-hidden">Показать меню</span>
-					</a>
+					<div class="sorting-type-wrapper">
+						<form class="hotels-sorting-type">
+							<select class="select-control" name="sorting">
+								<option value="cheap">Сначала дешёвые</option>
+								<option value="expensive">Сначала дорогие</option>
+							</select>
+						</form>
+						<a href="#" class="button-menu">
+							<span class="visually-hidden">Показать список</span>
+						</a>
+						<a href="#" class="button-menu">
+							<span class="visually-hidden">Показать карточки</span>
+						</a>
+						<a href="#" class="button-menu">
+							<span class="visually-hidden">Показать меню</span>
+						</a>
+					</div>
 				</section>
-				<hr>
+				<hr class="divider">
 				<section class="hotels-catalog">
 					<h2 class="visually-hidden">Список гостиниц</h2>
 					<ul class="hotels-cards">
@@ -183,16 +185,18 @@
 									<button class="favourites">В избранное</button>
 								</div>
 							</div>
-							<div class="hotel-card-rating_block">
-								<span class="star" data-rating="1"></span>
-								<span class="star" data-rating="2"></span>
-								<span class="star" data-rating="3"></span>
-								<span class="star" data-rating="4"></span>
-								<span class="star" data-rating="5"></span>
+							<div class="hotel-card-rating-wrapper">
+								<div class="hotel-card-rating_block">
+									<span class="star" data-rating="1"></span>
+									<span class="star" data-rating="2"></span>
+									<span class="star" data-rating="3"></span>
+									<span class="star" data-rating="4"></span>
+									<span class="star" data-rating="5"></span>
+								</div>
+								<p class="hotel-card-rating">РЕЙТИНГ:<span>8.5</span></p>
 							</div>
-							<p class="hotel-card-rating">РЕЙТИНГ:<span>8.5</span></p>
 						</li>
-
+						<hr class="divider">
 						<li class="hotel-card">
 							<img src="img/hotels/hotels-cards/desert-quali.jpg" width="180" height="120"
 								alt="Desert Quail Inn" class="hotel-card-img">
@@ -205,16 +209,18 @@
 									<button class="favourites">В избранное</button>
 								</div>
 							</div>
-							<div class="hotel-card-rating_block">
-								<span class="star" data-rating="1"></span>
-								<span class="star" data-rating="2"></span>
-								<span class="star" data-rating="3"></span>
-								<span class="star" data-rating="4"></span>
-								<span class="star" data-rating="5"></span>
+							<div class="hotel-card-rating-wrapper">
+								<div class="hotel-card-rating_block">
+									<span class="star" data-rating="1"></span>
+									<span class="star" data-rating="2"></span>
+									<span class="star" data-rating="3"></span>
+									<span class="star" data-rating="4"></span>
+									<span class="star" data-rating="5"></span>
+								</div>
+								<p class="hotel-card-rating">РЕЙТИНГ:<span>8.9</span></p>
 							</div>
-							<p class="hotel-card-rating">РЕЙТИНГ:<span>8.9</span></p>
 						</li>
-
+						<hr class="divider">
 						<li class="hotel-card">
 							<img src="img/hotels/hotels-cards/villas.jpg" width="180" height="120"
 								alt="Villas at Poco Diablo" class="hotel-card-img">
@@ -227,16 +233,18 @@
 									<button class="favourites">В избранное</button>
 								</div>
 							</div>
-							<div class="hotel-card-rating_block">
-								<span class="star" data-rating="1"></span>
-								<span class="star" data-rating="2"></span>
-								<span class="star" data-rating="3"></span>
-								<span class="star" data-rating="4"></span>
-								<span class="star" data-rating="5"></span>
+							<div class="hotel-card-rating-wrapper">
+								<div class="hotel-card-rating_block">
+									<span class="star" data-rating="1"></span>
+									<span class="star" data-rating="2"></span>
+									<span class="star" data-rating="3"></span>
+									<span class="star" data-rating="4"></span>
+									<span class="star" data-rating="5"></span>
+								</div>
+								<p class="hotel-card-rating">РЕЙТИНГ:<span>9.2</span></p>
 							</div>
-							<p class="hotel-card-rating">РЕЙТИНГ:<span>9.2</span></p>
 						</li>
-
+						<hr class="divider">
 						<li class="hotel-card">
 							<img src="img/hotels/hotels-cards/green-tree.jpg" width="180" height="120"
 								alt="GreenTree Inn" class="hotel-card-img">
@@ -249,17 +257,21 @@
 									<button class="favourites">В избранное</button>
 								</div>
 							</div>
-							<div class="hotel-card-rating_block">
-								<span class="star" data-rating="1"></span>
-								<span class="star" data-rating="2"></span>
-								<span class="star" data-rating="3"></span>
-								<span class="star" data-rating="4"></span>
-								<span class="star" data-rating="5"></span>
+							<div class="hotel-card-rating-wrapper">
+								<div class="hotel-card-rating_block">
+									<span class="star" data-rating="1"></span>
+									<span class="star" data-rating="2"></span>
+									<span class="star" data-rating="3"></span>
+									<span class="star" data-rating="4"></span>
+									<span class="star" data-rating="5"></span>
+								</div>
+								<p class="hotel-card-rating">РЕЙТИНГ:<span>9.2</span></p>
 							</div>
-							<p class="hotel-card-rating">РЕЙТИНГ:<span>9.2</span></p>
 						</li>
 					</ul>
+					<hr class="divider">
 					<button class="button hotels-show-more" type="button">Загрузить ещё</button>
+					<hr class="divider">
 				</section>
 
 				<section class="pagination">
@@ -313,17 +325,17 @@
 			<h2 class="visually-hidden">Контакты</h2>
 			<ul class="footer-social-list">
 				<li class="footer-social-item">
-					<a href="https://twitter.com/htmlacademy_ru" class="button">
+					<a href="https://twitter.com/htmlacademy_ru" class="button-social--twitter">
 						<span class="visually-hidden">Twitter</span>
 					</a>
 				</li>
 				<li class="footer-social-item">
-					<a href="https://www.facebook.com/htmlacademy" class="button">
+					<a href="https://www.facebook.com/htmlacademy" class="button-social--facebook">
 						<span class="visually-hidden">Facebook</span>
 					</a>
 				</li>
 				<li class="footer-social-item">
-					<a href="https://www.youtube.com/c/HTMLAcademyRUS" class="button">
+					<a href="https://www.youtube.com/c/HTMLAcademyRUS" class="button-social--youtube">
 						<span class="visually-hidden">Youtube</span>
 					</a>
 				</li>
