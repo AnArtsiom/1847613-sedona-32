@@ -405,6 +405,7 @@ body {
 	width: 20px;
 	height: 18px;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .social--twitter {
@@ -455,17 +456,51 @@ body {
 }
 
 .hotels-filter {
-	display: flex;
+	display: grid;
+	grid-template-columns: 150px 67px 145px 167px 287px 81px;
+	grid-template-rows: repeat(3, 50px);
+}
+ 
+.hotels-filter-group {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.hotels-filter-group.hotels-filter-type {
+	grid-column: 3;
+}
+
+.hotels-filter-group.hotels-filter-price {
+	grid-column: 5;
 }
 
 .hotels-filter-list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.hotels-filter-item {
+	margin-bottom: 12px;
 }
 
 .hotels-filter-title {
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 26px;
+	margin-bottom: 30px;
+}
+
+.hotels-filter-buttons {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.hotels-filter-input {
+	width: 143px;
 }
 
 .hotel-label {
@@ -478,6 +513,8 @@ body {
 }
 
 .button-submit {
+	grid-column: 7;
+	grid-row: 2;
 	width: 160px;
 	padding: 12px;
 	border-radius: 4px;
@@ -487,6 +524,18 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	font-family: inherit;
+}
+
+.button-clear {
+	grid-column: 7;
+	grid-row: 3;
+	align-self: end;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 23px;
+	color: inherit;
+	background: none;
+	border: none;
 }
 
 .hotels-sort {
@@ -578,34 +627,30 @@ body {
 }
 
 .hotel-card-about {
+	display: grid;
+	grid-template-columns: 151px 160px;
+	grid-gap: 0 8px;
 	margin-right: auto;
 }
 
 .hotel-card-about-title {
+	grid-column: 1 / -1;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 31px;
-	margin: 0;
-	margin-bottom: 1px;
+	margin: 0 0 1px 0;
 	color: #000;
 }
 
 .hotel-card-about p {
 	line-height: 24px;
-	margin: 0;
-}
-
-.card-descr-wrap {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 31px;
+	margin: 0 0 31px 0;
 }
 
 .hotel-card-detailed {
 	width: 151px;
 	padding: 6px;
 	border-radius: 4px;
-	margin-right: 8px;
 	background-color: #756257;
 	font-size: 16px;
 	font-weight: 700;
