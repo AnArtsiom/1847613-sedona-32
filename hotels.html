@@ -142,8 +142,10 @@
 							<span class="visually-hidden">Изменить максимальную цену.</span>
 						</button>
 					</fieldset>
-					<button class="button button-submit" type="submit">Применить</button>
-					<button class="button-clear" type="button">Сбросить</button>
+					<div class="hotels-filter-buttons">
+						<button class="button button-submit" type="submit">Применить</button>
+						<button class="button-clear" type="button">Сбросить</button>
+					</div>
 				</form>
 			</section>
 
@@ -158,15 +160,17 @@
 								<option value="expensive">Сначала дорогие</option>
 							</select>
 						</form>
-						<a href="#" class="button-menu menu-tile">
-							<span class="visually-hidden">Показать список</span>
-						</a>
-						<a href="#" class="button-menu menu-slideshow">
-							<span class="visually-hidden">Показать карточки</span>
-						</a>
-						<a href="#" class="button-menu menu-list button-menu--active">
-							<span class="visually-hidden">Показать меню</span>
-						</a>
+						<div class="button-menu-wrapper">
+							<a href="#" class="button-menu menu-tile">
+								<span class="visually-hidden">Показать список</span>
+							</a>
+							<a href="#" class="button-menu menu-slideshow">
+								<span class="visually-hidden">Показать карточки</span>
+							</a>
+							<a href="#" class="button-menu menu-list button-menu--active">
+								<span class="visually-hidden">Показать меню</span>
+							</a>
+						</div>
 					</div>
 				</section>
 				<section class="hotels-catalog">
@@ -291,19 +295,18 @@
 						</select>
 					</form>
 				</section>
-
-				<section class="mailing">
-					<h2 class="visually-hidden">Рассылка</h2>
-					<h3 class="mailing-title">Подпишитесь на рассылку</h3>
-					<p class="mailing-description">Только полезная информация и никакого спама,<br> честное
-						бойскаутское!
-					</p>
-					<form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-						<input type="email" name="mailing-email" placeholder="Ваш e-mail">
-						<button type="submit" class="button">Подписаться</button>
-					</form>
-				</section>
 			</div>
+			<section class="mailing">
+				<h2 class="visually-hidden">Рассылка</h2>
+				<h3 class="mailing-title">Подпишитесь на рассылку</h3>
+				<p class="mailing-description">Только полезная информация и никакого спама,<br> честное
+					бойскаутское!
+				</p>
+				<form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+					<input type="email" name="mailing-email" placeholder="Ваш e-mail">
+					<button type="submit" class="button">Подписаться</button>
+				</form>
+			</section>
 		</div>
 	</main>
 

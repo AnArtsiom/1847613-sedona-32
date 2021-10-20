@@ -208,6 +208,7 @@ body {
 
 .advantages-list-item {
 	width: 400px;
+	min-height: 384px;
 	background-repeat: no-repeat;
 	padding: 98px 75px 77px;
 }
@@ -268,6 +269,7 @@ body {
 
 /* SEARCH */
 .search {
+	min-height: 417px;
 	text-align: center;
 	padding: 91px 240px;
 }
@@ -305,7 +307,7 @@ body {
 /* MAILING */
 .mailing {
 	text-align: center;
-	padding: 94px 200px;
+	padding: 89px 200px 137px;
 }
 
 .mailing-title {
@@ -330,22 +332,32 @@ body {
 	background-repeat: no-repeat;
 	background-color: #898989;
 	color: #fff;
+	padding: 94px 200px;
 }
 
 .mailing--index .mailing-title {
 	color: inherit;
 }
 
+.mailing-form {
+	display: grid;
+	grid-template-columns: 1fr auto;
+}
+
 .mailing-form input {
 	font-size: 18px;
 	line-height: 26px;
+	background: #F2F2F2;
 	padding: 0 19px 0 22px;
+	border: none;
+	border-radius: 10px 0px 0px 10px;
 }
 
 .button {
 	width: 200px;
 	padding: 15px;
 	border-radius: 0px 10px 10px 0px;
+	border: none;
 	background-color: #83b3d3;
 	font-size: 20px;
 	font-weight: 700;
@@ -458,7 +470,7 @@ body {
 .hotels-filter {
 	display: grid;
 	grid-template-columns: 150px 67px 145px 167px 287px 81px;
-	grid-template-rows: repeat(3, 50px);
+	grid-template-rows: auto;
 }
  
 .hotels-filter-group {
@@ -485,18 +497,15 @@ body {
 	margin-bottom: 12px;
 }
 
+.hotels-filter-item:last-child {
+	margin-bottom: 0;
+}
+
 .hotels-filter-title {
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 26px;
 	margin-bottom: 30px;
-}
-
-.hotels-filter-buttons {
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
 }
 
 .hotels-filter-input {
@@ -512,13 +521,16 @@ body {
 	width: 1056px;
 }
 
-.button-submit {
+.hotels-filter-buttons {
 	grid-column: 7;
-	grid-row: 2;
+	align-self: end;
+}
+
+.button-submit {
 	width: 160px;
 	padding: 12px;
 	border-radius: 4px;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 	font-size: 16px;
 	line-height: 21px;
 	text-align: center;
@@ -527,9 +539,11 @@ body {
 }
 
 .button-clear {
-	grid-column: 7;
-	grid-row: 3;
-	align-self: end;
+	width: 160px;
+	padding: 12px;
+	padding-bottom: 0;
+	border-radius: 4px;
+	margin-bottom: 0;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 23px;
@@ -562,17 +576,17 @@ body {
 	text-transform: uppercase;
 }
 
+.button-menu-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 48px);
+	grid-gap: 8px;
+}
 .button-menu {
 	width: 48px;
 	height: 48px;
 	background-repeat: no-repeat;
 	background-size: 16px 14px;
-	margin: 0 8px 5px 0;
 } 
-
-.button-menu:nth-child(3n+1) {
-	margin-right: 0;
-}
 
 .button-menu--active {
 	border: 2px solid #000000;
