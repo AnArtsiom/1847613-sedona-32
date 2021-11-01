@@ -95,27 +95,27 @@
 						<legend class="hotels-filter-title">Инфраструктура:</legend>
 						<ul class="hotels-filter-list">
 							<li class="hotels-filter-item">
-								<label class="checkbox">
-									<input class="visually-hidden checkbox-input" type="checkbox" name="hotels-checkbox"
+								<label class="control">
+									<input class="visually-hidden control-input" type="checkbox" name="pool"
 										value="pool" checked>
-									<span class="control-checkmark"></span>
-									<span class="hotel-label">Бассейн</span>
+									<span class="control-mark"></span>
+									<span class="control-label">Бассейн</span>
 								</label>
 							</li>
 							<li class="hotels-filter-item">
-								<label class="checkbox">
-									<input class="visually-hidden checkbox-input" type="checkbox" name="hotels-checkbox"
+								<label class="control">
+									<input class="visually-hidden control-input" type="checkbox" name="parking"
 										value="parking" checked>
-									<span class="control-checkmark"></span>
-									<span class="hotel-label">Парковка</span>
+									<span class="control-mark"></span>
+									<span class="control-label">Парковка</span>
 								</label>
 							</li>
 							<li class="hotels-filter-item">
-								<label class="checkbox">
-									<input class="visually-hidden checkbox-input" type="checkbox" name="hotels-checkbox"
+								<label class="control">
+									<input class="visually-hidden control-input" type="checkbox" name="wifi"
 										value="wifi">
-									<span class="control-checkmark"></span>
-									<span class="hotel-label">Wi-Fi</span>
+									<span class="control-mark"></span>
+									<span class="control-label">Wi-Fi</span>
 								</label>
 							</li>
 						</ul>
@@ -125,27 +125,27 @@
 						<legend class="hotels-filter-title">Тип жилья:</legend>
 						<ul class="hotels-filter-list">
 							<li class="hotels-filter-item">
-								<label class="radio">
-									<input class="visually-hidden radio-input" type="radio" name="hotels-radio"
-										value="hotel" checked>
-									<span class="control-checkmark"></span>
-									<span class="hotel-label">Гостиница</span>
+								<label class="control">
+									<input class="visually-hidden control-input" type="radio" name="hotel" value="hotel"
+										checked>
+									<span class="control-mark"></span>
+									<span class="control-label">Гостиница</span>
 								</label>
 							</li>
 							<li class="hotels-filter-item">
-								<label class="radio">
-									<input class="visually-hidden radio-input" type="radio" name="hotels-radio"
+								<label class="control">
+									<input class="visually-hidden control-input" type="radio" name="motel"
 										value="motel">
-									<span class="control-checkmark"></span>
-									<span class="hotel-label">Мотель</span>
+									<span class="control-mark"></span>
+									<span class="control-label">Мотель</span>
 								</label>
 							</li>
 							<li class="hotels-filter-item">
-								<label class="radio">
-									<input class="visually-hidden radio-input" type="radio" name="hotels-radio"
+								<label class="control">
+									<input class="visually-hidden control-input" type="radio" name="apartments"
 										value="apartments">
-									<span class="control-checkmark"></span>
-									<span class="hotel-label">Апартаменты</span>
+									<span class="control-mark"></span>
+									<span class="control-label">Апартаменты</span>
 								</label>
 							</li>
 						</ul>
@@ -153,20 +153,27 @@
 
 					<fieldset class="hotels-filter-group hotels-filter-price">
 						<legend class="hotels-filter-title">Стоимость, ₽:</legend>
-						<label class="hotels-price-label">
-							<input class="hotels-filter-input" type="number" name="min-price" value="0">
-							<span class="filter-input-limit">от</span>
-						</label>
-						<label class="hotels-price-label">
-							<input class="hotels-filter-input" type="number" name="max-price" value="9000">
-							<span class="filter-input-limit">до</span>
-						</label>
-						<button class="range-toggle toggle-min" type="button">
-							<span class="visually-hidden">Изменить минимальную цену.</span>
-						</button>
-						<button class="range-toggle toggle-max" type="button">
-							<span class="visually-hidden">Изменить максимальную цену.</span>
-						</button>
+						<div class="label-wrapper">
+							<label class="hotels-price-label">
+								<input class="hotels-filter-input input-min" type="number" name="min-price" value="0">
+								<!-- <span class="filter-input-limit">от</span> -->
+							</label>
+							<label class="hotels-price-label">
+								<input class="hotels-filter-input input-max" type="number" name="max-price"
+									value="9000">
+								<!-- <span class="filter-input-limit">до</span> -->
+							</label>
+						</div>
+						<div class="range-scale">
+							<div class="range-bar" style="left: 0; width: 227px">
+								<button class="range-toggle toggle-min" type="button">
+									<span class="visually-hidden">Изменить минимальную цену.</span>
+								</button>
+								<button class="range-toggle toggle-max" type="button">
+									<span class="visually-hidden">Изменить максимальную цену.</span>
+								</button>
+							</div>
+						</div>
 					</fieldset>
 					<div class="hotels-filter-buttons">
 						<button class="button button-submit" type="submit">Применить</button>
@@ -181,7 +188,8 @@
 					<span class="hotels-sort-title">найдено гостиниц: <span class="hotels-number">38</span></span>
 					<div class="sorting-type-wrapper">
 						<form class="hotels-sorting-type">
-							<select class="select-control" name="sorting">
+							<label class="visually-hidden" for="sorting">Сортировка</label>
+							<select class="select-control" name="sorting" id="sorting">
 								<option value="cheap">Сначала дешёвые</option>
 								<option value="expensive">Сначала дорогие</option>
 							</select>
@@ -352,7 +360,7 @@
 					бойскаутское!
 				</p>
 				<form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-					<input type="email" name="mailing-email" placeholder="Ваш e-mail">
+					<input class="email-field" type="email" name="mailing-email" placeholder="Ваш e-mail">
 					<button type="submit" class="button">Подписаться</button>
 				</form>
 			</section>

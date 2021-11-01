@@ -27,7 +27,7 @@
       </a>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a href="#" class="navigation-link navigation-link--search">
             <svg class="navigation-icon" width="18" height="18" aria-hidden="true" focusable="false" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#a)">
@@ -59,6 +59,57 @@
             </span>
           </a>
         </li>
+
+        <div class="popup popup-favourites">
+          <ul class="popup-list">
+            <li class="popup-item">
+
+              <a href="#" class="popup-link">
+                <div class="popup-link-wrapper">
+                  <img src="img/hotels/hotels-cards/desert-quali.jpg" alt="" class="popup-img" width="48" height="48">
+                  <h2 class="popup-title">Desert Quail Inn</h2>
+                  <p class="popup-description">Мотель</p>
+                </div>
+              </a>
+
+              <button class="popup-button-delete">
+                <svg class="popup-icon" width="16" height="16" aria-hidden="true" focusable="false" fill=""
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="" fill="">
+                    <path
+                      d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" />
+                    <path
+                      d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z" />
+                  </g>
+                </svg>
+                <span class="visually-hidden">Корзина</span>
+              </button>
+            </li>
+            <li class="popup-item">
+              <a href="#" class="popup-link">
+                <div class="popup-link-wrapper">
+                  <img src="img/hotels/hotels-cards/villas.jpg" alt="" class="popup-img" width="48" height="48">
+                  <h2 class="popup-title">Villas at Poco Diablo</h2>
+                  <p class="popup-description">Апартаменты</p>
+                </div>
+              </a>
+              <button class="popup-button-delete">
+                <svg class="popup-icon" width="16" height="16" aria-hidden="true" focusable="false" fill=""
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="" fill="">
+                    <path
+                      d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" />
+                    <path
+                      d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z" />
+                  </g>
+                </svg>
+                <span class="visually-hidden">Корзина</span>
+              </button>
+            </li>
+          </ul>
+          <button class="btn-popup-favourites">Все избранные</button>
+        </div>
+
         <li class="navigation-item">
           <a href="#" class="navigation-link button-nav">
             хочу сюда
@@ -85,7 +136,7 @@
         <div class="advantages-block">
           <div class="advantages-block-text">
             <h3 class="advantages-block-title">Настоящий городок</h3>
-            <p class="advantages-block-number">- №1 -</p>
+            <p class="advantages-block-number">&mdash; №1 &mdash;</p>
             <p class="advantages-block-description">Седона &mdash; не аттракцион&nbsp; для туристов, там течет своя
               жизнь
             </p>
@@ -117,7 +168,7 @@
         <div class="advantages-block advantages-block--right">
           <div class="advantages-block-text">
             <h3 class="advantages-block-title">Там есть<br> мост дьявола</h3>
-            <p class="advantages-block-number">- №2 -</p>
+            <p class="advantages-block-number">&mdash; №2 &mdash;</p>
             <p class="advantages-block-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
           <img class="advantages-block-photo" src="img/index/advantages/devils-bridge.jpg" width="800" height="384"
@@ -127,17 +178,17 @@
         <ol class="advantages-list">
           <li class="advantages-list-item">
             <h3 class="advantages-list-title">Небольшая площадь</h3>
-            <p class="advantages-list-number">- №3 -</p>
+            <p class="advantages-list-number">&mdash; №3 &mdash;</p>
             <p class="advantages-list-description">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-list-item">
             <h3 class="advantages-list-title">Красивая<br> дорога</h3>
-            <p class="advantages-list-number">- №4 -</p>
+            <p class="advantages-list-number">&mdash; №4 &mdash;</p>
             <p class="advantages-list-description"> Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-list-item">
             <h3 class="advantages-list-title">Мало<br> туристов</h3>
-            <p class="advantages-list-number">- №5 -</p>
+            <p class="advantages-list-number">&mdash; №5 &mdash;</p>
             <p class="advantages-list-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>
@@ -146,8 +197,8 @@
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <span class="search-title">Заинтересовались?</span>
-        <p class="search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
-          гостиниц в Седоне</p>
+        <p class="search-description">&nbsp;&nbsp;Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
+          предложения гостиниц в Седоне</p>
         <a href="catalog.html" class="search-link">поиск гостиницы в седоне</a>
       </section>
 
@@ -156,7 +207,7 @@
         <h3 class="mailing-title">Подпишитесь на рассылку</h3>
         <p class="mailing-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="mailing-email" placeholder="Ваш e-mail">
+          <input class="email-field" type="email" name="mailing-email" placeholder="Ваш e-mail">
           <button type="submit" class="button">Подписаться</button>
         </form>
       </section>
@@ -221,6 +272,103 @@
       </a>
     </section>
   </footer>
+
+  <div class="modal-container">
+    <div class="modal modal-search">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+        <svg class="modal-close-icon" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"
+            fill="#000" />
+        </svg>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="date-form-input">
+            <label class="modal-label" for="arrival-date">Дата заезда:</label>
+            <input class="date-form-field field" type="text" id="arrival-date" name="arrival-date"
+              value="27 апреля 2020">
+            <a href="#" class="modal-date-link">
+              <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity=".3" fill="#000">
+                  <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
+                  <path
+                    d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" />
+                  <path
+                    d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="date-form-input">
+            <label class="modal-label" for="leaving-date">Дата выезда:</label>
+            <input class="date-form-field field" type="text" id="leaving-date" name="leaving-date"
+              value="1 сентября 2021">
+            <a href="#" class="modal-date-link">
+              <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity=".3" fill="#000">
+                  <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
+                  <path
+                    d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" />
+                  <path
+                    d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <ul class="modal-list">
+            <li class="modal-item">
+              <label class="modal-label" for="Adults">Взрослые:</label>
+              <div class="modal-wrapper">
+                <input class="modal-input" type="number" id="Adults" name="Adults" value="2">
+                <button class="modal-button modal-button--minus" type="button">
+                  <svg class="modal-input-icon" width="13" height="2" fill="" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="" d="M0 0v1h13V0H0Z" fill="" />
+                  </svg>
+                </button>
+                <span class="visually-hidden">Минус</span>
+                <button class="modal-button modal-button--plus" type="button">
+                  <svg class="modal-input-icon" width="13" height="13" fill="" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="" opacity="" />
+                  </svg>
+                </button>
+                <span class="visually-hidden">Плюс</span>
+              </div>
+            </li>
+            <li class="modal-item">
+              <label class="modal-label modal-label--children" for="Children">Дети:</label>
+              <div class="modal-button-info">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12.5" cy="12.5" r="12.5" fill="" />
+                </svg>
+                <span>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                  размещаются бесплатно.</span>
+              </div>
+              <div class="modal-wrapper">
+                <input class="modal-input" type="number" id="Children" name="Children" value="1">
+                <button class="modal-button modal-button--minus" type="button">
+                  <svg class="modal-input-icon" width="13" height="1" fill="" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="" d="M0 0v1h13V0H0Z" fill="" />
+                  </svg>
+                </button>
+                <span class="visually-hidden">Минус</span>
+                <button class="modal-button modal-button--plus" type="button">
+                  <svg class="modal-input-icon" width="13" height="13" fill="" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="" opacity="" />
+                  </svg>
+                </button>
+                <span class="visually-hidden">Плюс</span>
+              </div>
+            </li>
+          </ul>
+          <a class="search-modal-button" href="#">Найти</a>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
+<script src="index.js"></script>
 
 </html>
