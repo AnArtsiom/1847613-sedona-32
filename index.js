@@ -1,6 +1,6 @@
 const link = document.querySelector('.navigation-link--favourites'),
 	  popup = document.querySelector('.popup'),
-	  search = document.querySelector('.navigation-link--search'),
+	  modalBtn = document.querySelector('.button-nav'),
 	  modal = document.querySelector('.modal-container'),
 	  closeBtn = document.querySelector('.modal-close-button');
 
@@ -9,7 +9,7 @@ link.addEventListener('click', function(e) {
 	popup.classList.toggle('popup-open');
 });
 
-search.addEventListener('click', function(e) {
+modalBtn.addEventListener('click', function(e) {
 	e.preventDefault()
 	modal.classList.add('modal-container-open');
 });
