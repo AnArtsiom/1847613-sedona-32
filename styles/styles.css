@@ -454,7 +454,7 @@ body {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 36px;
-	margin: 0 auto 25px;
+	margin: 0 auto 28px;
 	text-transform: uppercase;
 	color: #000;
 }
@@ -473,7 +473,7 @@ body {
 	background-size: cover;
 	background-color: #898989;
 	color: #fff;
-	padding: 96px 200px;
+	padding: 94px 200px;
 }
 
 .mailing--index .mailing-title {
@@ -607,7 +607,7 @@ body {
 	color: #000;
 	text-decoration: none;
 	outline: none;
-	padding: 12px;
+	padding: 15px;
 }
 
 .footer-tel:hover {
@@ -631,7 +631,7 @@ body {
 
 .footer-htmlacademy-link {
 	outline: none;
-	padding: 15px 22px;
+	padding: 16px 23px;
 	border-radius: 10px;
 }
 
@@ -891,8 +891,12 @@ body {
 
 .hotels-filter-input::-webkit-outer-spin-button,
 .hotels-filter-input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+	appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
 }
 
 .hotels-filter-input:hover {
@@ -923,6 +927,8 @@ body {
   position: absolute;
   height: 4px;
   background-color: #fff;
+  left: 0;
+  width: 227px;
 }
 
 .range-toggle {
@@ -1050,8 +1056,10 @@ body {
   	background-repeat: no-repeat;
   	background-position: right 20px center;
 	appearance: none;
+	-moz-appearance: none;
 	outline: none;
 	cursor: pointer;
+	background-color: #fff;
 }
 
 .select-control:hover,
@@ -1259,7 +1267,7 @@ body {
 	text-transform: uppercase;
 	background: #f2f2f2;
     border-radius: 4px;
-    padding: 9px;
+    padding: 9px 31px;
 }
 
 .favourites {
@@ -1315,8 +1323,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 117px;
-	min-width: 155px;
+	height: 121px;
+	min-width: 160px;
 	align-items: center;
 }
 
@@ -1333,7 +1341,7 @@ body {
 }
 
 .star {
-	margin-right: 25px;
+	margin: 5px 23px 0 0;
 }
 
 .star::after {
@@ -1425,18 +1433,20 @@ body {
 }
 
 .select-pagination {
-  width: 160px;
-  padding: 9px 16px;
-  margin-left: 46px;
-  font: inherit;
-  border: 2px solid #e6e6e6;
-  border-radius: 4px;
-  background-image: url("../img/hotels/select-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-  appearance: none;
-  outline: none;
-  cursor: pointer;
+	width: 160px;
+	padding: 9px 16px;
+	margin-left: 46px;
+	font: inherit;
+	border: 2px solid #e6e6e6;
+	border-radius: 4px;
+	background-image: url("../img/hotels/select-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: right 20px center;
+	appearance: none;
+	-moz-appearance: none;
+	outline: none;
+	cursor: pointer;
+	background-color: #fff;
 }
 
 .select-pagination:hover,
@@ -1739,6 +1749,7 @@ body {
 	padding: 14px 27px 14px 19px;
 	width: 420px;
 	appearance: none;
+	-moz-appearance: none;
 	border: 2px solid #f2f2f2;
 
 	font-family: inherit;
@@ -1750,6 +1761,7 @@ body {
 .date-form-field::-webkit-outer-spin-button,
 .date-form-field::-webkit-inner-spin-button {
 	appearance: none;
+	-moz-appearance: none;
 	margin: 0;
 }
 
@@ -1951,12 +1963,12 @@ body {
 
 .modal-input::-webkit-outer-spin-button,
 .modal-input::-webkit-inner-spin-button {
+	-moz-appearance: none;
 	appearance: none;
 	margin: 0;
 }
 
 .search-modal-button {
-	display: block;
 	margin: 0 auto;
 	width: 100%;
 	padding: 10px;

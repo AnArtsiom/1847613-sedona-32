@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Гостиницы</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
@@ -14,21 +14,21 @@
 		<nav class="navigation">
 			<ul class="navigation-list">
 				<li class="navigation-item">
-					<a href="index.html" class="navigation-link">Главная</a>
+					<a class="navigation-link" href="index.html">Главная</a>
 				</li>
 				<li class="navigation-item">
-					<a href="#" class="navigation-link">О Седоне</a>
+					<a class="navigation-link" href="#">О Седоне</a>
 				</li>
 				<li class="navigation-item">
-					<a href="#" class="navigation-link navigation-link-current">Гостиницы</a>
+					<a class="navigation-link navigation-link-current" href="#no_scroll">Гостиницы</a>
 				</li>
 			</ul>
-			<a href="index.html" class="header-logo">
-				<img class="header-logo-img" src="img/header/sedona-logo.svg" width="138" height="70" alt="logo">
+			<a class="header-logo" href="#no_scroll">
+				<img class="header-logo-img" src="img/header/sedona-logo.svg" width="138" height="70" alt="logo.">
 			</a>
 			<ul class="navigation-list navigation-user">
 				<li class="navigation-item">
-					<a href="#" class="navigation-link">
+					<a class="navigation-link" href="#">
 						<svg class="navigation-icon" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"
 							focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#a)">
@@ -48,7 +48,7 @@
 					</a>
 				</li>
 				<li class="navigation-item">
-					<a href="#" class="navigation-link navigation-link--favourites">
+					<a class="navigation-link navigation-link--favourites" href="#">
 						<svg class="navigation-icon" width="18" height="17" viewBox="0 0 18 17" aria-hidden="true"
 							focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
@@ -62,7 +62,7 @@
 					</a>
 				</li>
 				<li class="navigation-item">
-					<a href="#" class="navigation-link button-nav">
+					<a class="navigation-link button-nav" href="#">
 						хочу сюда
 					</a>
 				</li>
@@ -99,7 +99,7 @@
 							<li class="hotels-filter-item">
 								<label class="control">
 									<input class="visually-hidden control-input" type="checkbox" name="pool"
-										value="pool" checked>
+										value="pool" checked required>
 									<span class="control-mark"></span>
 									<span class="control-label">Бассейн</span>
 								</label>
@@ -107,7 +107,7 @@
 							<li class="hotels-filter-item">
 								<label class="control">
 									<input class="visually-hidden control-input" type="checkbox" name="parking"
-										value="parking" checked>
+										value="parking" checked required>
 									<span class="control-mark"></span>
 									<span class="control-label">Парковка</span>
 								</label>
@@ -115,7 +115,7 @@
 							<li class="hotels-filter-item">
 								<label class="control">
 									<input class="visually-hidden control-input" type="checkbox" name="wifi"
-										value="wifi">
+										value="wifi" required>
 									<span class="control-mark"></span>
 									<span class="control-label">Wi-Fi</span>
 								</label>
@@ -129,7 +129,7 @@
 							<li class="hotels-filter-item">
 								<label class="control">
 									<input class="visually-hidden control-input" type="radio" name="hotel-type"
-										value="hotel" checked>
+										value="hotel" checked required>
 									<span class="control-mark"></span>
 									<span class="control-label">Гостиница</span>
 								</label>
@@ -137,7 +137,7 @@
 							<li class="hotels-filter-item">
 								<label class="control">
 									<input class="visually-hidden control-input" type="radio" name="hotel-type"
-										value="motel">
+										value="motel" required>
 									<span class="control-mark"></span>
 									<span class="control-label">Мотель</span>
 								</label>
@@ -145,7 +145,7 @@
 							<li class="hotels-filter-item">
 								<label class="control">
 									<input class="visually-hidden control-input" type="radio" name="hotel-type"
-										value="apartments">
+										value="apartments" required>
 									<span class="control-mark"></span>
 									<span class="control-label">Апартаменты</span>
 								</label>
@@ -157,17 +157,18 @@
 						<legend class="hotels-filter-title">Стоимость, ₽:</legend>
 						<div class="label-wrapper">
 							<label class="hotels-price-label">
-								<input class="hotels-filter-input input-min" type="number" name="min-price" value="0">
+								<input class="hotels-filter-input input-min" type="number" name="min-price" value="0"
+									required>
 								<span class="decorative-input-border"></span>
 							</label>
 							<label class="hotels-price-label">
-								<input class="hotels-filter-input input-max" type="number" name="max-price"
-									value="9000">
+								<input class="hotels-filter-input input-max" type="number" name="max-price" value="9000"
+									required>
 								<span class="decorative-input-border border--right"></span>
 							</label>
 						</div>
 						<div class="range-scale">
-							<div class="range-bar" style="left: 0; width: 227px">
+							<div class="range-bar">
 								<button class="range-toggle toggle-min" type="button">
 									<span class="visually-hidden">Изменить минимальную цену.</span>
 								</button>
@@ -197,7 +198,7 @@
 							</select>
 						</form>
 						<div class="cards-wrapper">
-							<a href="#" class="card-toggle">
+							<a class="card-toggle" href="#">
 								<svg class="card-icon" width="16" height="14" viewBox="0 0 16 14" aria-hidden="true"
 									focusable="false" fill="" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -206,14 +207,14 @@
 								</svg>
 								<span class="visually-hidden">Показать список</span>
 							</a>
-							<a href="#" class="card-toggle">
+							<a class="card-toggle" href="#">
 								<svg class="card-icon" width="16" height="14" viewBox="0 0 16 14" aria-hidden="true"
 									focusable="false" fill="" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="" />
 								</svg>
 								<span class="visually-hidden">Показать карточки</span>
 							</a>
-							<a href="#" class="card-toggle button-menu--active">
+							<a class="card-toggle button-menu--active" href="#">
 								<svg class="card-icon" width="16" height="14" viewBox="0 0 16 14" aria-hidden="true"
 									focusable="false" fill="" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -229,12 +230,12 @@
 					<h2 class="visually-hidden">Список гостиниц</h2>
 					<ul class="hotels-cards">
 						<li class="hotel-card">
-							<a href="#" class="card-image-link">
-								<img src="img/hotels/hotels-cards/amara-resort.jpg" width="180" height="120"
-									alt="Amara resort & spa" class="hotel-card-img">
+							<a class="card-image-link" href="#no_scroll">
+								<img class="hotel-card-img" src="img/hotels/hotels-cards/amara-resort.jpg" width="180"
+									height="120" alt="Amara resort & spa.">
 							</a>
 							<div class="hotel-card-about">
-								<a href="#" class="hotel-card-link">
+								<a class="hotel-card-link" href="#no_scroll">
 									<h3 class="hotel-card-about-title">Amara Resort & Spa</h3>
 								</a>
 								<p class="hotel-card-about-description">Гостиница</p>
@@ -253,12 +254,12 @@
 							</div>
 						</li>
 						<li class="hotel-card">
-							<a href="#" class="card-image-link">
-								<img src="img/hotels/hotels-cards/desert-quali.jpg" width="180" height="120"
-									alt="Desert Quail Inn" class="hotel-card-img">
+							<a class="card-image-link" href="#no_scroll">
+								<img class="hotel-card-img" src="img/hotels/hotels-cards/desert-quali.jpg" width="180"
+									height="120" alt="Desert Quail Inn.">
 							</a>
 							<div class="hotel-card-about">
-								<a href="#" class="hotel-card-link">
+								<a class="hotel-card-link" href="#no_scroll">
 									<h3 class="hotel-card-about-title">Desert Quail Inn</h3>
 								</a>
 								<p class="hotel-card-about-description">Мотель</p>
@@ -276,12 +277,12 @@
 							</div>
 						</li>
 						<li class="hotel-card">
-							<a href="#" class="card-image-link">
-								<img src="img/hotels/hotels-cards/villas.jpg" width="180" height="120"
-									alt="Villas at Poco Diablo" class="hotel-card-img">
+							<a class="card-image-link" href="#no_scroll">
+								<img class="hotel-card-img" src="img/hotels/hotels-cards/villas.jpg" width="180"
+									height="120" alt="Villas at Poco Diablo.">
 							</a>
 							<div class="hotel-card-about">
-								<a href="#" class="hotel-card-link">
+								<a class="hotel-card-link" href="#no_scroll">
 									<h3 class="hotel-card-about-title">Villas at Poco Diablo</h3>
 								</a>
 								<p class="hotel-card-about-description">Апартаменты</p>
@@ -298,12 +299,12 @@
 							</div>
 						</li>
 						<li class="hotel-card">
-							<a href="#" class="card-image-link">
-								<img src="img/hotels/hotels-cards/green-tree.jpg" width="180" height="120"
-									alt="GreenTree Inn" class="hotel-card-img">
+							<a class="card-image-link" href="#no_scroll">
+								<img class="hotel-card-img" src="img/hotels/hotels-cards/green-tree.jpg" width="180"
+									height="120" alt="GreenTree Inn.">
 							</a>
 							<div class="hotel-card-about">
-								<a href="#" class="hotel-card-link">
+								<a class="hotel-card-link" href="#no_scroll">
 									<h3 class="hotel-card-about-title">GreenTree Inn</h3>
 								</a>
 								<p class="hotel-card-about-description">Гостиница</p>
@@ -329,19 +330,19 @@
 							<a class="pagination-link pagination-link--current">1</a>
 						</li>
 						<li class="pagination-item">
-							<a class="pagination-link" href="#">2</a>
+							<a class="pagination-link" href="#no_scroll">2</a>
 						</li>
 						<li class="pagination-item">
-							<a class="pagination-link" href="#">3</a>
+							<a class="pagination-link" href="#no_scroll">3</a>
 						</li>
 						<li class="pagination-item">
-							<a class="pagination-link" href="#">4</a>
+							<a class="pagination-link" href="#no_scroll">4</a>
 						</li>
 						<li class="pagination-item">
-							<a class="pagination-link" href="#">...</a>
+							<a class="pagination-link" href="#no_scroll">...</a>
 						</li>
 						<li class="pagination-item">
-							<a class="pagination-link" href="#">10</a>
+							<a class="pagination-link" href="#no_scroll">10</a>
 						</li>
 					</ul>
 
@@ -363,7 +364,7 @@
 				</p>
 				<form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
 					<input class="email-field" type="email" name="mailing-email" placeholder="Ваш e-mail">
-					<button type="submit" class="button">Подписаться</button>
+					<button class="button" type="submit">Подписаться</button>
 				</form>
 			</section>
 		</div>
@@ -374,7 +375,7 @@
 			<h2 class="visually-hidden">Контакты</h2>
 			<ul class="footer-social-list">
 				<li class="footer-social-item">
-					<a href="https://twitter.com/htmlacademy_ru" class="button-social">
+					<a class="button-social" href="https://twitter.com/htmlacademy_ru">
 						<svg class="footer-icon" width="18" height="15" viewBox="0 0 18 15" aria-hidden="true"
 							focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
@@ -385,7 +386,7 @@
 					</a>
 				</li>
 				<li class="footer-social-item">
-					<a href="https://www.facebook.com/htmlacademy" class="button-social">
+					<a class="button-social" href="https://www.facebook.com/htmlacademy">
 						<svg class="footer-icon" width="10" height="18" viewBox="0 0 10 18" aria-hidden="true"
 							focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z" fill="" />
@@ -394,7 +395,7 @@
 					</a>
 				</li>
 				<li class="footer-social-item">
-					<a href="https://www.youtube.com/c/HTMLAcademyRUS" class="button-social">
+					<a class="button-social" href="https://www.youtube.com/c/HTMLAcademyRUS">
 						<svg class="footer-icon" width="20" height="14" viewBox="0 0 20 14" aria-hidden="true"
 							focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd"
@@ -405,7 +406,7 @@
 					</a>
 				</li>
 			</ul>
-			<a href="tel:+78128121212" class="footer-tel">
+			<a class="footer-tel" href="tel:+78128121212">
 				+7 (812) 812-12-12
 				<span class="visually-hidden">Телефон</span>
 			</a>
