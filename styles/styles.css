@@ -858,6 +858,7 @@ body {
 	outline: none;
 	border: 2px solid #fff;
 	background: none;
+	-moz-appearance: textfield;
 }
 
 .hotels-price-label {
@@ -893,10 +894,6 @@ body {
 .hotels-filter-input::-webkit-inner-spin-button {
 	appearance: none;
 	margin: 0;
-}
-
-input[type='number'] {
-    -moz-appearance: textfield;
 }
 
 .hotels-filter-input:hover {
