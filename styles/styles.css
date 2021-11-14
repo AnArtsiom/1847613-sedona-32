@@ -39,6 +39,13 @@ body {
 	font-style: normal;
 }
 
+.body-wrapper {
+    width: 1280px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px 5px rgb(0 1 1 / 20%);
+	background-color: #f2f2f2;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -67,6 +74,8 @@ body {
 	width: 1200px;
 	min-height: 65px;
 	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 0 8px 0 rgb(0 0 0 / 25%);
 }
 
 .navigation-list {
@@ -223,6 +232,8 @@ body {
 .page-container {
 	width: 1200px;
 	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 0 8px 0 rgb(0 0 0 / 25%);
 }
 
 /*  PROMO  */
@@ -551,6 +562,8 @@ body {
 	align-items: center;
 	width: 1200px;
 	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 0 8px 0 rgb(0 0 0 / 25%);
 }
 
 .footer-social-list {
@@ -789,6 +802,10 @@ body {
 }
 
 .control:active .control-mark {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.control-input:disabled + .control-mark {
 	background: rgba(255, 255, 255, 0.3);
 }
 
@@ -1168,7 +1185,7 @@ body {
 
 .hotel-card-about {
 	display: grid;
-	grid-template-columns: 151px 160px;
+	grid-template-columns: 151px 450px;
 	grid-gap: 0 8px;
 	margin-right: auto;
 }
